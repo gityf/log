@@ -1,0 +1,2 @@
+./configure --prefix=`pwd`/../../glog
+make && make install
