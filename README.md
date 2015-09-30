@@ -1,0 +1,2 @@
+# log
+write log implements.
