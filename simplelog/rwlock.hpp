@@ -17,14 +17,14 @@ public:
         ::pthread_rwlock_destroy(&m_lv);
     }
     int RLock(){
-        return pthread_rwlock_rdlock(&m_lv);
+        return ::pthread_rwlock_rdlock(&m_lv);
     }
     int WLock(){
-        return pthread_rwlock_wrlock(&m_lv);
+        return ::pthread_rwlock_wrlock(&m_lv);
 
     }
     int UnLock(){
-        return pthread_rwlock_unlock(&m_lv);
+        return ::pthread_rwlock_unlock(&m_lv);
     }
 
 private:
